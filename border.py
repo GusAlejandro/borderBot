@@ -14,6 +14,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
+#everything above is just configs and imports
 
 #both functions below are for editing the string to just be the wait time
 def splitted(ztring):
