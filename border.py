@@ -46,7 +46,7 @@ carReg = WaitTime("http://traffic.calit2.net/border/border-wait-times.php?type=p
 walkReady = WaitTime("http://traffic.calit2.net/border/border-wait-times.php?type=pedestrian&sub=ready&port=250401")
 walkReg = WaitTime("http://traffic.calit2.net/border/border-wait-times.php?type=pedestrian&sub=standard&port=250401")
 
-
+#constructs tweet and sends it through 
 def respondTweet():
     m = " VIA CAR: Sentri " + carSentri.getTime() + ", Ready Lane " + carReady.getTime() + ", Regular " + carReg.getTime() + " || ON FOOT: Ready Lane " + walkReady.getTime() + ", Regular " + walkReg.getTime() 
     api.update_status(status=m) 
